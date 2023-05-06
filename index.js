@@ -30,7 +30,7 @@ Blockly.JavaScript['minlength'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   
   const first = this.getFieldValue('NAME');
-  var code = '"minlength": ' + first + ',\n';
+  var code = '"minLength": ' + first + ',\n';
   return code;
 };
 Blockly.JavaScript['minimum'] = function(block) {
@@ -276,7 +276,7 @@ Blockly.JavaScript['SelfHealing'] = function(block) {
 Blockly.JavaScript['start'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '{' + statements_properties + '},\n';
+  var code = '{' + statements_properties + '}\n';
   return code;
 };
 Blockly.JavaScript['enum'] = function(block) {
