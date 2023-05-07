@@ -85,7 +85,7 @@ Blockly.JavaScript['properties'] = function(block) {
 Blockly.JavaScript['name'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"name":{' + statements_properties + '},\n';
+  var code = '"Name":{' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['desc'] = function(block) {
