@@ -38,7 +38,7 @@ Blockly.JavaScript['minimum'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   
   const first = this.getFieldValue('NAME');
-  var code = '"minimum": ' + first + ',\n';
+  var code = '"minimum": ' + first + '\n';
   return code;
 };
 Blockly.JavaScript['maximum'] = function(block) {
@@ -46,144 +46,144 @@ Blockly.JavaScript['maximum'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   
   const first = this.getFieldValue('NAME');
-  var code = '"maximum": ' + first + ',\n';
+  var code = '"maximum": ' + first + '\n';
   return code;
 };
 
 Blockly.JavaScript['Console'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Console":{' + statements_properties + '},\n';
+  var code = '"Console": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['ReturnCodes'] = function (block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"ReturnCodes":{' + statements_properties + '},\n';
+  var code = '"ReturnCodes": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['References'] = function (block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"References":{' + statements_properties + '},\n';
+  var code = '"References": {' + statements_properties + '},\n';
   return code;
 };
 
 Blockly.JavaScript['Resolution'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Resolution":{' + statements_properties + '},\n';
+  var code = '"Resolution": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['properties'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"properties":{' + statements_properties + '},\n';
+  var code = '"properties": {' + statements_properties + '},\n';
   return code;
 };
 
 Blockly.JavaScript['name'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Name":{' + statements_properties + '},\n';
+  var code = '"Name": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['desc'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"description":{' + statements_properties + '},\n';
+  var code = '"Description": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Logger'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Logger":{' + statements_properties + '},\n';
+  var code = '"Logger": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Type'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Type":{' + statements_properties + '},\n';
+  var code = '"Type": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Plugin'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Plugin":{' + statements_properties + '},\n';
+  var code = '"Plugin": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Plugin-Data'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Plugin-Data":{' + statements_properties + '},\n';
+  var code = '"Plugin-Data": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['items'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"items":{' + statements_properties + '},\n';
+  var code = '"items": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['File-path'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"File-path":{' + statements_properties + '},\n';
+  var code = '"File-path": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Max-log-size'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Max-log-size":{' + statements_properties + '},\n';
+  var code = '"Max-log-size": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Max-log-files'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Max-log-files":{' + statements_properties + '},\n';
+  var code = '"Max-log-files": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['loggingformat'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Logging-Format":{' + statements_properties + '},\n';
+  var code = '"Logging-Format": {' + statements_properties + '},\n';
   return code;
 };
 
 Blockly.JavaScript['Order'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Order":{' + statements_properties + '},\n';
+  var code = '"Order": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Delimeter'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Delimeter":{' + statements_properties + '},\n';
+  var code = '"Delimeter": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Error-Codes'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Error-Codes":{' + statements_properties + '},\n';
+  var code = '"Error-Codes": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['ID'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"ID":{' + statements_properties + '},\n';
+  var code = '"ID": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Messages'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Messages":{' + statements_properties + '},\n';
+  var code = '"Messages": {' + statements_properties + '},\n';
   return code;
 };
 
 Blockly.JavaScript['Log'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Log":{' + statements_properties + '},\n';
+  var code = '"Log": {' + statements_properties + '},\n';
   return code;
 };
 
@@ -191,44 +191,44 @@ Blockly.JavaScript['Log'] = function(block) {
 Blockly.JavaScript['Severity'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Severity":{' + statements_properties + '},\n';
+  var code = '"Severity": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Arguments'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Arguments":{' + statements_properties + '},\n';
+  var code = '"Arguments": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Resolution'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Resolution":{' + statements_properties + '},\n';
+  var code = '"Resolution": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Description'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Description":{' + statements_properties + '},\n';
+  var code = '"Description": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Owner'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Owner":{' + statements_properties + '},\n';
+  var code = '"Owner": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['SelfHealing'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"SelfHealing":{' + statements_properties + '},\n';
+  var code = '"SelfHealing": {' + statements_properties + '},\n';
   return code;
 };
 
 Blockly.JavaScript['References'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"References":{' + statements_properties + '},\n';
+  var code = '"References": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['link'] = function(block) {
@@ -246,37 +246,37 @@ Blockly.JavaScript['ReturnCodes'] = function(block) {
 Blockly.JavaScript['HTTP'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"HTTP":{' + statements_properties + '},\n';
+  var code = '"HTTP": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Console'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Console":{' + statements_properties + '},\n';
+  var code = '"Console": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Name'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Name":{' + statements_properties + '},\n';
+  var code = '"Name": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Description'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Description":{' + statements_properties + '},\n';
+  var code = '"Description": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['Owner'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"Owner":{' + statements_properties + '},\n';
+  var code = '"Owner": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['SelfHealing'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
-  var code = '"SelfHealing":{' + statements_properties + '},\n';
+  var code = '"SelfHealing": {' + statements_properties + '},\n';
   return code;
 };
 Blockly.JavaScript['start'] = function(block) {
@@ -290,7 +290,7 @@ Blockly.JavaScript['enum'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   
   const first = this.getFieldValue('NAME');
-  var code = '"enum": [ ' + first  + '],\n';
+  var code = '"enum": [ ' + first  + ']\n';
   return code;
 };
 
