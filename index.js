@@ -136,6 +136,12 @@ Blockly.JavaScript['Max-log-size'] = function(block) {
   var code = '"Max-log-size":{' + statements_properties + '},\n';
   return code;
 };
+Blockly.JavaScript['Max-log-files'] = function(block) {
+  var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '"Max-log-size":{' + statements_properties + '},\n';
+  return code;
+};
 Blockly.JavaScript['loggingformat'] = function(block) {
   var statements_properties = Blockly.JavaScript.statementToCode(block, 'properties');
   // TODO: Assemble JavaScript into code variable.
