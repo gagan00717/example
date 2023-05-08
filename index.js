@@ -1096,7 +1096,7 @@ const toolbox = {
                 
                 {
                   "kind": "block",
-                  "type": "description"
+                  "type": "descriptioncomma"
                 },
           
                 {
