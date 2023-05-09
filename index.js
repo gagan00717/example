@@ -1807,8 +1807,18 @@ let workspace = {};
  *
  * Called from index.html when the execute button is clicked.
  */
+
+
 function executeCode() {
   const code = Blockly.JavaScript.workspaceToCode(workspace);
-  eval(code);
-  print(code)
+  const blob = new Blob([code], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'schema.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  console.log(code);
+
 }
