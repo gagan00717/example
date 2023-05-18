@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    /> <title>HPE_CTY</title>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="index.js"></script>
+    
 
-<head>
-  <meta charset="utf-8">
-  <title>HPE_CTY</title>
-  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
-  <script src="index.js"></script>
 
   <style>
     html,
@@ -24,21 +39,29 @@
       margin: 10px;
     }
 
-    .region {
-      flex-grow: 1;
-      height: 0;
+    .button-container {
       display: flex;
-      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: 10px;
     }
-   
 
     button {
-      width: max-content;
-      margin: 1em;
+      margin: 10px;
+      width: calc(12.5% - 20px); /* One-eighth of the screen width minus margin */
+    }
+
+    .workspace-container {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    #blocklyDiv {
+      flex-grow: 1;
     }
 
     #generatedCodeContainer {
       flex-grow: 1;
+      margin: 10px;
       resize: none;
     }
   </style>
@@ -46,11 +69,32 @@
 
 <body onload="start()">
   <h1>HPECTY</h1>
-  <div class="region" id="blocklyDiv"></div>
-  <button onclick="executeCode()">Download</button>
-  <div class="region">
-    <textarea id="generatedCodeContainer" readonly placeholder="Generated Json will go here..."></textarea>
+  <div class="button-container">
+    <button onclick="executeCode()">Download</button>
+    <button id="run-button">Run React JSON App</button>
   </div>
+  <div class="workspace-container">
+    <div id="blocklyDiv"></div>
+    <textarea id="generatedCodeContainer" readonly placeholder="Generated JSON will go here..."></textarea>
+  </div>
+
+
+  <script>
+    const runButton = document.getElementById('run-button');
+    runButton.addEventListener('click', () => {
+      fetch('/run-json', { method: 'POST' })
+        .then((response) => {
+          if (response.ok) {
+            console.log('React JSON app is running...');
+          } else {
+            console.error('Error running React JSON app');
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    });
+  </script>
 </body>
 
 </html>
