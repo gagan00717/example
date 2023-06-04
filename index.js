@@ -422,7 +422,7 @@ Blockly.JavaScript['SelfHealing'] = function (block) {
     'properties'
   );
   // TODO: Assemble JavaScript into code variable.
-  var code = '"SelfHealing": {' + statements_properties + '},\n';
+  var code = '"SelfHealing": {' + statements_properties + '}\n';
   return code;
 };
 Blockly.JavaScript['start'] = function (block) {
